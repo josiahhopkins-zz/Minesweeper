@@ -1,0 +1,33 @@
+#gameArea {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	vertical-align: center;
+	color: red;
+}
+.tile{
+	border: 1px solid black;
+	width: 90px;
+	height: 90px;
+	font-size: 20pt;
+	color: blue;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	background-color: blue;
+}
+div .inner{
+	width: 100px;
+	height: 200px;
+}
+
+div {
+	font-size: 11pt;
+}
+
+button{
+	width:100px;
+	height:15px;
+}

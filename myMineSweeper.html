@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My version of minesweeper</title>
+
+	<link href="myMineSweeper.css" type="text/css" rel="stylesheet" />
+	<script src="myMineSweeper2.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1>
+		My version of MineSweeper
+	</h1>
+
+	<p>
+	(To whoever owns microsoft, you have the rights to this and can tell me to take this down if you want, also I would love a job.)
+	</p>
+
+	<h4>Instructions</h4>
+	<p>
+	Each square is either a bomb or not. If it is not a bomb when it is uncovered it will displayed the number of bombs next to it. The game ends when you have uncovered all of the not bombs. If you right click it becomes a flag. If you left click it uncovers the square. If you uncover a bomb you lose.
+	</p>
+	<div id="scorearea">
+	<!--
+		<div class="inner">
+			<div>Time</div>
+			<div></div>
+		</div>
+		<div class="inner">
+			<div>Best Time</div>
+			<div></div>
+		</div>
+		<div class="inner">
+			<div>flags left</div>
+			<div></div>
+		</div>
+	-->
+		<div class="inner">
+			<form>
+				Bombs: <input type="number" id="bombs" value="20"><br>
+				Width: <input type="number" id="width" value="20"><br>
+				Height: <input type="number" id="height" value="10"><br><br>
+				Reset: <input type="button" name ="reset" id="resetButton">
+			</form>
+
+		</div>
+	</div>
+	<div id="gameoptions"></div>
+	<div id="gamearea" oncontextmenu = "return false" onselectstart = "return false"> 
+
+	</div>
+
+</body>
+
+</html>
