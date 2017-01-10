@@ -1,3 +1,12 @@
+/* I should definitely add to this that I didn't really know much JS before this and it was purely to figure some of the ins
+and outs of JS. Since finishing this project I know several 'better' ways to do things but I would prefer to move onto 
+different projects than to root up this project in order to rebuild it
+
+-Josiah
+*/
+
+
+
 (function(){
 
 
