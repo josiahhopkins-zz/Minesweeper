@@ -22,6 +22,7 @@
 		var height = document.getElementById("height").value;
 		bombs = document.getElementById("bombs").value;
 		makeBoard(width, height, bombs);
+		assignBoardValues();
 		showBoard(width, height);
 	}
 
@@ -40,11 +41,7 @@
 			}
 			arrayBoard[x][y] = -1;
 		}
-		for(i = 0; i < width; i++){
-			for(var j = 0; j < height; j++){
-				arrayBoard[i][j] = getValue(i, j);
-			}
-		}
+		assignBoardValues();
 		lostYet = false;
 	}
 
@@ -97,7 +94,9 @@
 
 	function showTile(i, j){
 		if(arrayBoard[i][j] != -1){
-			tileBoard[i][j].innerHTML = arrayBoard[i][j];
+			if(arrayBoard[i][j] != 0){
+				tileBoard[i][j].innerHTML = arrayBoard[i][j];
+			}
 			tileBoard[i][j].style.backgroundColor = "white";
 		} else{
 			tileBoard[i][j].style.backgroundColor = "red";
@@ -192,6 +191,14 @@
 				if(tempJ != j || tempI != i){
 					submitClick(tempI, tempJ);
 				}
+			}
+		}
+	}
+
+	function assignBoardValues(){
+		for(var i = 0; i < arrayBoard.length; i++){
+			for(var j = 0; j < arrayBoard[0].length; j++){
+				arrayBoard[i][j] = getValue(i, j);
 			}
 		}
 	}
