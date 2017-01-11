@@ -65,10 +65,10 @@ different projects than to root up this project in order to rebuild it
 
 		if(!lostYet && i > -1 && j > -1 && i < arrayBoard.length && j < arrayBoard[0].length && arrayBoard[i][j] < 9){
 			showTile(i, j);
+			arrayBoard[i][j] += 200;
 			if(arrayBoard[i][j] == -1){
 				gameOver();
 			} else {
-				arrayBoard[i][j] += 200;
 				if(arrayBoard[i][j] % 200 === 0){
 					for(var tempI = i - 1; tempI < i + 2; tempI++){
 						for (var tempJ = j - 1; tempJ < j + 2; tempJ++) {
