@@ -66,7 +66,7 @@ different projects than to root up this project in order to rebuild it
 		if(!lostYet && i > -1 && j > -1 && i < arrayBoard.length && j < arrayBoard[0].length && arrayBoard[i][j] < 9){
 			showTile(i, j);
 			arrayBoard[i][j] += 200;
-			if(arrayBoard[i][j] == -1){
+			if(arrayBoard[i][j] == 199){
 				gameOver();
 			} else {
 				if(arrayBoard[i][j] % 200 === 0){
